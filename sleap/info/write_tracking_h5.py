@@ -202,6 +202,8 @@ def main(labels: Labels, output_path: str, all_frames: bool = True):
         tracks=locations_matrix,
         track_occupancy=occupancy_matrix,
     )
+    print("breakpoint")
+    breakpoint()
 
     write_occupancy_file(output_path, data_dict, transpose=True)
 
